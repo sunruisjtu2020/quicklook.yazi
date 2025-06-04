@@ -41,6 +41,8 @@ local function entry()
 	for _, f in ipairs(files) do
 		-- quote path and run non-blocking
 		os.execute("qlmanage -p " .. string.format("%q", f) .. " >/dev/null 2>&1 &")
+		-- make the QuickLook window frontmost
+		os.execute([[osascript -e 'tell application "System Events" to set frontmost of process "qlmanage" to true']])
 	end
 
 	if do_notify then
