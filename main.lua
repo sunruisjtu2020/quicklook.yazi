@@ -1,10 +1,10 @@
 -- plugins/quicklook.yazi/main.lua
--- Default key: "Q"
+-- Default key: "I"
 -- Override by setting `quicklook_key` in your ~/.config/yazi/init.lua
 -- Only support macOS, not for Windows or Linux
 
--- Read user override key or fall back to "Q"
-local key = rawget(_G, "quicklook_key") or "Q"
+-- Read user override key or fall back to "I"
+local key = rawget(_G, "quicklook_key") or "I"
 
 -- Define a new command "quicklook"
 ya.command("quicklook", function()
