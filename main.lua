@@ -53,7 +53,10 @@ end
 return {
 	-- setup allows user to toggle notification in ~/.config/yazi/plugins/quicklook.toml
 	setup = function(state, options)
-		state.notification = options.notification and true
+		if options.showPreviewNotification == nil then
+			options.showPreviewNotification = false
+		end
+		state.notification = options.showPreviewNotification == true
 	end,
 	entry = entry,
 }

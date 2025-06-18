@@ -27,3 +27,11 @@ block = false
 You can press `I` in the manager view to preview the selected file with QuickLook.
 
 You can change to your favorite keybinding.
+
+To enable notification, add this to `~/.config/yazi/init.lua`:
+
+```lua
+require("quicklook"):setup({
+  showPreviewNotification = true,
+})
+```
