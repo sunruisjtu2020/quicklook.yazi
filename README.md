@@ -14,7 +14,7 @@ ya pkg add sunruisjtu2020/quicklook
 
 ## Usage
 
-Add a keybinding to your `~/.config/yazi/keymaps.toml`:
+Add a keybinding to your `~/.config/yazi/keymap.toml`:
 
 ```toml
 [[mgr.prepend_keymap]]
